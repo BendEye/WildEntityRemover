@@ -1,0 +1,30 @@
+{
+	"schemaVersion": 1,
+	"id": "wildentityremover",
+	"version": "${version}",
+	"name": "Wild Entity Remover",
+	"description": "Client-side FPS mod that hides entities for performance.",
+	"authors": [
+		"Me"
+	],
+	"contact": {
+		"sources": "https://github.com/yourname/wildentityremover"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/wildentityremover/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.wildshitfixes.WildentityremoverClient"
+		]
+	},
+	"mixins": [
+		"wildentityremover.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
